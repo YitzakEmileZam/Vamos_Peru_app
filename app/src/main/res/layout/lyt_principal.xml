@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActPrincipal">
+
+    <!-- res/layout/activity_act_principal.xml -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/fondo1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Viva Perú"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombres"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/txtApePat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido Paterno"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/txtApeMat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido Materno"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/txtTipDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de Documento: dni, carnet"
+                tools:ignore="TouchTargetSizeCheck" />
+            <!--<Spinner
+                android:id="@+id/spTipDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="TouchTargetSizeCheck">-->
+                <!-- Opciones: DNI, Pasaporte, Carné de Extranjería -->
+            <!--</Spinner>-->
+
+            <EditText
+                android:id="@+id/txtNumDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de Documento"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/txtGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escriba su genero: masculino, femenino"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!--<Spinner
+                android:id="@+id/spGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="TouchTargetSizeCheck">-->
+            <!--</Spinner>-->
+
+            <EditText
+                android:id="@+id/txtCel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Celular"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo Electrónico"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/txtCantPersonas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad de personas: 1,2,3,4,5"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!--<Spinner
+                android:id="@+id/spCantPersonas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="TouchTargetSizeCheck">-->
+                <!-- Opciones: Masculino, Femenino, Otro -->
+            <!--</Spinner>-->
+            <!--Con un spinner o un edittext mostrar la cantidad de personas-->
+            <!--<NumberPicker
+                android:id="@+id/cantidadPersonas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minValue="1"
+                android:maxValue="30" />-->
+
+            <EditText
+                android:id="@+id/txtDiaReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dia de reserva"
+                tools:ignore="TouchTargetSizeCheck" />
+            <!--<DatePicker
+                android:id="@+id/diaReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+
+            <EditText
+                android:id="@+id/txtNumDiasReserv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero de dìas de reservacion"
+                tools:ignore="TouchTargetSizeCheck" />
+            <!--A traves de un edittext o spinner colocar los #dias de reserva-->
+            <!--<NumberPicker
+                android:id="@+id/numeroDiasReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minValue="1"
+                android:maxValue="3" />-->
+
+            <!--Como opcion colocar un edittext indicando la hora y el formato-->
+            <!--<TimePicker
+                android:id="@+id/horaReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+
+            <!--<Button
+                android:id="@+id/btnReservar"
+                android:text="Reservar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+
+            <EditText
+                android:id="@+id/txtHorReserv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hora de la reservación- Formato de hora: 18:25pm"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintVertical_bias="0.746">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/fondo1"
+                    android:onClick="guardarReserva"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ENVIAR"
+                        android:textColor="#ffffff"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintVertical_bias="0.746">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:background="@drawable/fondo1"
+                android:onClick="verListaReservas"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LISTADO"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:background="@drawable/fondo1"
+                android:onClick="vistaDesarrollador"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DESARROLLADOR"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
